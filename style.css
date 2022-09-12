@@ -200,4 +200,8 @@ IMAGE CHANGE
   html {
     height: 100%;
   }
+
+  .card {
+    transform: translateY(-10%);
+  }
 }
