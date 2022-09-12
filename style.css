@@ -156,6 +156,7 @@ a {
 }
 
 .btn {
+  font-weight: var(--btn-weight);
   display: block;
   background-color: var(--blue-primary-btn);
   font-size: var(--p-size);
