@@ -19,7 +19,6 @@ body {
   overflow-y: hidden;
   position: relative;
   height: 100vh;
-  width: 100vw;
 }
 
 :root {
@@ -195,6 +194,10 @@ IMAGE CHANGE
 @media (max-width: 32em) {
   .bg-img {
     src: url(./images/pattern-background-mobile.svg);
-    transform: scale(200%);
+    overflow: hidden;
+  }
+  body,
+  html {
+    height: 100%;
   }
 }
