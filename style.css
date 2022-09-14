@@ -16,9 +16,8 @@ body {
   background-color: var(--blue-primary-bg);
   font-family: "Red Hat Display", sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
   position: relative;
-  height: 100vh;
+  padding-bottom: 4.8rem;
 }
 
 :root {
@@ -61,8 +60,9 @@ a {
 .container {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 5%;
-  height: 100vh;
+  padding: 0 4.5%;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
 }
 .centre {
   display: flex;
@@ -81,6 +81,7 @@ a {
   max-width: 40rem;
   border-radius: 16px;
   overflow: hidden;
+  transform: translateY(3%);
   box-shadow: 0 20px 16px var(--blue-primary-bg-shadow);
 }
 
@@ -182,12 +183,6 @@ SCALE SHIFT
   }
 }
 
-@media (max-width: 64em) {
-  html {
-    font-size: 52%;
-  }
-}
-
 /* /////////////////////
 IMAGE CHANGE
 ///////////////////// */
@@ -196,12 +191,14 @@ IMAGE CHANGE
     src: url(./images/pattern-background-mobile.svg);
     overflow: hidden;
   }
-  body,
-  html {
-    height: 100%;
+  .text-part {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
-
-  .card {
-    transform: translateY(-10%);
+}
+@media (max-width: 21.25em) {
+  .text-part {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
